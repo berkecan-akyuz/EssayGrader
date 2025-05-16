@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_card_bg"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="12dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvItemScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 95"
+        android:textColor="@color/defaultText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvItemFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your essay was well-structured..."
+        android:textColor="@color/defaultText"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submitted on: 2025-05-09"
+        android:textColor="#A9A9A9"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- First row: View + Download -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnViewEssay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="View Essay"
+            android:backgroundTint="@color/defaultBackground"
+            android:textColor="@color/defaultText"
+            android:textSize="14sp"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnDownloadEssay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Download PDF"
+            android:backgroundTint="@color/defaultBackground"
+            android:textColor="@color/defaultText"
+            android:textSize="14sp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <!-- Second row: Delete -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@color/defaultBackground"
+        android:textColor="@color/defaultText"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

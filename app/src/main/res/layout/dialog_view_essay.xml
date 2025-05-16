@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog_bg"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvEssayContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#EDF2F4"
+            android:textSize="16sp"
+            android:text="Essay content goes here..." />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/defaultText"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnCloseDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:backgroundTint="#EDF2F4" />
+
+</LinearLayout>

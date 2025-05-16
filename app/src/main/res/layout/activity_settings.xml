@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvSettingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#EDF2F4"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/input_field_bg"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#EDF2F4"
+        android:textColorHint="#99EDF2F4"
+        android:textSize="18sp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSettingsTitle" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_field_bg"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#EDF2F4"
+        android:textColorHint="#99EDF2F4"
+        android:textSize="18sp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUserName" />
+
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#EDF2F4"
+        android:text="Change Password"
+        android:textColor="#121212"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUserEmail" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EDF2F4"
+        android:text="Log Out"
+        android:textColor="#121212"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChangePassword" />
+
+    <Button
+        android:id="@+id/btnBackFromSettings"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:text="Back To Dashboard"
+        android:textColor="#121212"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#EDF2F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

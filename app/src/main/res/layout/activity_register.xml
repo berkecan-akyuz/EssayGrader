@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Essay Grader"
+        android:textColor="#EDF2F4"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an account"
+        android:textColor="#A9A9A9"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:background="@drawable/input_field_bg"
+        android:textColor="#EDF2F4"
+        android:textColorHint="#99EDF2F4"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:background="@drawable/input_field_bg"
+        android:textColor="#EDF2F4"
+        android:textColorHint="#99EDF2F4"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:background="@drawable/input_field_bg"
+        android:textColor="#EDF2F4"
+        android:textColorHint="#99EDF2F4"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="#EDF2F4"
+        android:text="Register"
+        android:textColor="#121212"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#EDF2F4"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
