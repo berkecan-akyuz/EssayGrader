@@ -1,4 +1,3 @@
-````markdown
 # ✍️ Essay Grader Mobile App
 
 **Essay Grader** is a modern Android mobile application that allows users to submit English essays and receive AI-powered feedback and scoring. It’s designed for students, educators, or anyone looking to improve their writing.
