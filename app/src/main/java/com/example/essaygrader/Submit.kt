@@ -16,6 +16,9 @@ import android.net.Uri
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.TextView
+import com.tom_roush.pdfbox.android.PDFBoxResourceLoader
+import com.tom_roush.pdfbox.pdmodel.PDDocument
+import com.tom_roush.pdfbox.text.PDFTextStripper
 
 
 class Submit : AppCompatActivity() {
@@ -50,6 +53,7 @@ class Submit : AppCompatActivity() {
         Volley.newRequestQueue(this).add(configRequest)
 
         btnSubmitEssay.setOnClickListener {
+            btnSubmitEssay.isEnabled = false
             val essayText = etEssayText.text.toString().trim()
             val wordCount = essayText.split("\\s+".toRegex()).filter { it.isNotEmpty() }.size
 
@@ -90,6 +94,7 @@ class Submit : AppCompatActivity() {
                     } else {
                         Toast.makeText(this, "Grading failed", Toast.LENGTH_SHORT).show()
                     }
+                    btnSubmitEssay.isEnabled = true
                 },
                 { error ->
                     Log.e("Submit", "Error: ${error.message}", error)
@@ -150,9 +155,12 @@ class Submit : AppCompatActivity() {
 
     private fun extractPdfText(uri: Uri): String {
         return try {
+            PDFBoxResourceLoader.init(applicationContext)
             val inputStream = contentResolver.openInputStream(uri)
-            val pdf = com.tom_roush.pdfbox.pdmodel.PDDocument.load(inputStream)
-            val stripper = com.tom_roush.pdfbox.text.PDFTextStripper()
+                ?: return "Failed to open PDF file."
+
+            val pdf = PDDocument.load(inputStream)
+            val stripper = PDFTextStripper()
             val text = stripper.getText(pdf)
             pdf.close()
             text
@@ -161,6 +169,8 @@ class Submit : AppCompatActivity() {
             "Error reading PDF file."
         }
     }
+
+
 
 
 

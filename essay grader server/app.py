@@ -22,7 +22,8 @@ mysql = MySQL(app)
 
 # 🔧 Configurable limits
 MAX_ESSAY_WORDS = 500
-MAX_FEEDBACK_TOKENS = int(200 * 1.33)
+MAX_OUTPUT_WORDS = 200
+MAX_FEEDBACK_TOKENS = int(MAX_OUTPUT_WORDS * 1.33)
 
 @app.route('/config', methods=['GET'])
 def get_config():
@@ -36,7 +37,7 @@ def grade_essay_with_gpt(essay_text):
 You are an expert English essay grader. Read the following essay and provide:
 
 1. A score from 0 to 100
-2. Constructive feedback for improvement
+2. Constructive feedback for improvement, it should be {MAX_OUTPUT_WORDS} words long at very max.
 
 Format your response exactly like this:
 Score: <number>
