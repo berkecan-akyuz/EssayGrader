@@ -58,10 +58,3 @@ Set your word limit or feedback size in the server:
 MAX_ESSAY_WORDS = 500
 MAX_OUTPUT_WORDS = 200
 ```
-
-## 🧪 Future Enhancements
-
-* AI-generated grammar tips
-* Essay topic recommendations
-* Multi-language support
-* In-app essay editor with spellcheck
