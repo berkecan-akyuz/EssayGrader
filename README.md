@@ -66,14 +66,3 @@ MAX_OUTPUT_WORDS = 200
 * Essay topic recommendations
 * Multi-language support
 * In-app essay editor with spellcheck
-
----
-
-Made with ❤️ using Kotlin + Python
-
-```
-
----
-
-Let me know if you want to include deployment instructions, API route documentation, or contributor credits!
-```
