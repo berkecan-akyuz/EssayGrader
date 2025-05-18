@@ -7,7 +7,7 @@
 - ✅ User registration & login
 - ✍️ Submit essays directly or upload from PDF
 - 📊 Get scores from 0 to 100
-- 🧠 Receive constructive feedback (up to 200 words)
+- 🧠 Receive constructive feedback (up to 200 words by default)
 - 🧾 Word counter and essay length validation
 - 🧷 Download feedback as PDF
 - 🕓 View and manage submission history
