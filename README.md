@@ -16,24 +16,6 @@
 - 🔒 Change password securely
 - 🎨 Clean dark-themed UI using `#121212` and `#EDF2F4`
 
-## 🛠 Tech Stack
-
-- **Frontend**: Kotlin + Android SDK
-- **Backend**: Python (Flask)
-- **Database**: MySQL
-- **AI Integration**: OpenAI API (GPT-4)
-- **PDF Handling**: Android PdfDocument & PDFBox
-- **Libraries**:
-  - Volley (network requests)
-  - PDFBox-Android (PDF reading)
-  - AndroidX libraries
-
-## 📷 Screenshots
-
-| Login | Essay Submission | Feedback Report |
-|-------|------------------|-----------------|
-| ![login](screenshots/login.png) | ![submit](screenshots/submit.png) | ![feedback](screenshots/feedback.png) |
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -48,13 +30,13 @@
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/essay-grader-app.git
+git clone https://github.com/berkecan-akyuz/essay-grader-app.git
 cd essay-grader-app
 ````
 
 2. **Run backend server**
 
-   * Set up `.env` for API keys and DB credentials
+   * Set up API key and DB credentials
    * Start Flask server
 
 ```bash
