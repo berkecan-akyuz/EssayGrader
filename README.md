@@ -47,7 +47,6 @@ python app.py
 3. **Run Android app**
 
    * Open project in Android Studio
-   * Set `BASE_URL` in Kotlin code to your server IP
    * Build & run on emulator or device
 
 ## ⚙️ Configuration
